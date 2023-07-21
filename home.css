@@ -1,0 +1,296 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: orange;
+    color: #fff;
+}
+
+.logo-side {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.afya {
+    font-size: 24px;
+    color: #000;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration-thickness: 5;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.login-link {
+    background-color: #00FF7F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    background-color: #000;
+    color: orange;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* Background Image styles */
+.background-image {
+    background-image: url("./healthit_article_018.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    height: calc(100vh - 150px); /* Subtracting the height of the navbar and some additional padding */
+}
+
+/* Learn More button styles */
+.learn-more-btn {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* About and Testimonials section styles */
+.sections-container {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#abt-heading,
+#testimonials-heading {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#abt-heading h1,
+#testimonials-heading h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.abt-grid,
+.testimonials-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.abt-box,
+.testimonial {
+    background-color: rgba(255, 165, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.abt-box:hover,
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.abt-content p,
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.abt-image img,
+.testimonials-col img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Services/Features section styles */
+.services {
+    padding: 40px 0;
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Added flex-wrap to allow boxes to wrap to the next line */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Added gap to create equal spacing between boxes */
+}
+
+.box {
+    flex: 0 0 calc(33.33% - 40px); /* Changed flex property to create equal width for three boxes in a row */
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: orange;
+    margin: 10px auto;
+}
+
+.box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
