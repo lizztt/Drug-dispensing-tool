@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        
+        center {
+            margin-top: 100px;
+        }
+        
+        h2 {
+            color: orange;
+        }
+        
+        form {
+            background-color: black;
+            padding: 20px;
+            width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: orange;
+        }
+        
+        select,
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"],
+        .back-button {
+            background-color: orange;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        .back-button:hover {
+            background-color: #FF8C00;
+        }
+        
+        p {
+            margin-top: 20px;
+            color: orange;
+        }
+        
+        a {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>User Login</h2>
+
+        <form action="login.php" method="POST">
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType" required>
+                <option value="">Select User Type</option>
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="pharmacist">Pharmacist</option>
+                <option value="pharmaceuticalcompanyadmin">Pharmaceutical Company Admin</option>
+                <option value="admin">Admin</option>
+            </select><br><br>
+
+            <label for="SSN">SSN:</label>
+            <input type="text" id="SSN" name="SSN" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+            <button class="back-button" onclick="goBack()">Home</button>
+            
+        </form>
+
+        <p>Not registered? <a href="register.html">Register here</a></p>
+    </center>
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
